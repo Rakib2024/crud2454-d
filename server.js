@@ -7,12 +7,11 @@ const path = require('path');
 const connectDB = require('./server/database/connection');
 
 const app = express();
-// ashim
 
 dotenv.config( { path : '.env'} )
 const PORT = process.env.PORT || 8080
 
-// log requests
+// log requests:
 app.use(morgan('tiny'));
 
 // mongodb connection
